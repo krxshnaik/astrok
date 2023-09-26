@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Krishna Naik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Aerospace Engineer In The Making.</p>
+            <h1>Hi, I am <span>Krishna Naik.</span><br>Welcome to my Website.<br>I am Passionate<br>about <span>Astrodynamics.</span></h1>
+        </div>
+    </div>
+</div>
+<!------------------------about---------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pfp.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me.</h1>
+                <p class="abt-sub">I'm a passionate individual with a diverse range of interests including astrodynamics, astrophotography, astronomy, aerospace engineering, stargazing, programming, graphic designing, and robotics. From capturing celestial beauty to designing cutting-edge aerospace systems, I thrive at the intersection of science, art, and technology.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Astrophotography</span><br>Photographing Celestial Events, Stars, Galaxies and Planets.</li>
+                        <li><span>Astronomy</span><br>Inquisitive about the vastness of the Universe and seeking knowledge about the cosmos.</li>
+                        <li><span>Aerospace Engineering</span><br>Passionate about designing and testing concepts of Propulsion, Materials & Structures, Aerodynamics, Astrodynamics, Avionics, Orbital Mechanics etc.</li>
+                        <li><span>Programming</span><br>App Development and Coding in HTML, CSS, MySQL, JavaScript, C++, C, and Python.</li>
+                        <li><span>Designing</span><br>Making Logos, User Interfaces, Graphical Designing.</li>
+                        <li><span>Chess</span><br>Played Chess and Rated 1500+ professionally at Inter-School Level.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>Interned as a Business Development Team Leader at International Stream Olympiads, UK.</li>
+                        <li><span>2022 - 2023</span><br>Won 1st Place for Best Code and Design in Ana-Vation App Development Compeititon organized by Friends Of Cancer Patients [FOCP].</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Ongoing</span><br>Currently Studying in CBSE 12th Grade Science Stream.</li>
+                        <li><span>2022 - 2023</span><br>Completed Studying in CBSE 11th Grade Science Stream.</li>
+                        <li><span>2021 - 2022</span><br>Completed Studying CBSE 10th Grade.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------projects---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects.</h1>
+        <div class="services-list">
+            <div>
+                <h2>CancSaver App</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+</body>
+</html>
